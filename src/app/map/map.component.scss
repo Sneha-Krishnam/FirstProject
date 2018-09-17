@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    background-color: #f5f8fa;
+    .heading {
+      flex: 1;
+      padding: 20px;
+    }
+    .user-drpdwn {
+      flex: 0 0 100px;
+      text-align: right;
+      padding: 20px;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background: #f5f8fa;
+    li {
+      padding: 10px 40px;
+    }
+    &:before {
+      content: "";
+      border-style: solid;
+      border-width: 0 10px 8px 10px;
+      border-color: transparent transparent #417770 transparent;
+      position: absolute;
+      right: 5px;
+      top: -8px;
+      z-index: 2;
+    }
+  }
+  
+  main {
+    aside {
+      width: 50px;
+      background: #f5f8fa;
+      
+    }
+  }
+  

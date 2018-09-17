@@ -1,0 +1,68 @@
+.main-header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+  }
+  .log-header{
+    width: 400px;
+    height: auto;
+    margin: 50px auto;
+    color: black;
+    background-color: #f5f8fa;
+    .headerr{
+      .tabs {
+        display: flex;
+        list-style-type: none;
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        li {
+          flex: 1;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .Tabb{
+      padding: 20px 0;
+      .content-wrapper {
+        margin: 20px;
+        .input-container {
+          width: 100%;
+          padding-right: 10px;
+          margin: 20px 0;
+          input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            height: 36px;
+            padding: 10px;
+          }
+        }
+        .button-wrapper {
+          text-align: center;
+          margin-top: 40px;
+          button {
+            padding: 10px 25px;
+            background-color: #357cdf;
+            outline: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .error {
+    margin: 20px 0 0 20px;
+    color :tomato;
+  }
+  .active {
+    border-bottom: 2px solid #357cdf;
+    color: #357cdf;
+    background-color: #dce2ea;
+  }
+  

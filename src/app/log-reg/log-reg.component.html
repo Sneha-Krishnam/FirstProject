@@ -1,0 +1,39 @@
+
+   <div  class="log-header">
+  <div class="headerr">
+    <ul class="tabs">
+      <li *ngFor="let tab of tabs" [ngClass]="{'active': currentTab == tab.value }" (click)="selectTab(tab.value)">
+        {{tab.name}}</li>
+    </ul>
+  </div>
+  <div *ngIf="showError" class="error">{{errorMessage}}</div>
+  <div *ngIf="currentTab == 'login'" class="Tabb">
+    <div class="content-wrapper">
+      <div class="input-container">
+        <label>Username</label>
+        <input type="text" [(ngModel)]="login.username" />
+      </div>
+      <div class="input-container">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="login.password" />
+      </div>
+      <div class="button-wrapper">
+        <button (click)="UserLogin()">LOGIN</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="currentTab == 'signup'" class="Tabb">
+    <div class="content-wrapper">
+       <div class="input-container">
+        <label>Username</label>
+        <input type="text" [(ngModel)]="signup.username" />
+      </div>
+      <div class="input-container">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="signup.password" />
+      </div>
+      <div class="button-wrapper">
+        <button (click)="UserSignup()">SIGNUP</button>
+      </div>
+    </div>
+  </div>

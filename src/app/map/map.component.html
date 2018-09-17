@@ -1,0 +1,24 @@
+
+<div class="map">
+  <header>
+    <div class="heading">
+      Welcome
+    </div>
+    <div class="user-drpdwn">
+      <ul>
+        <li>
+          <span>{{currentUser}}</span>
+          <span style="margin-left: 20px">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+          <ul class="sub-menu">
+            <li (click)="UserLogout()">Logout</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main style="width: 1000px; height: 1000px">
+    <div id="map" class="map"></div>
+  </main>
+</div>
